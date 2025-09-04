@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>ব্যালেন্স এডিট</title>
+</head>
+<body>
+    <h2>👤 {{ user["name"] }} (ID: {{ user_id }})</h2>
+    <form method="POST">
+        নতুন ব্যালেন্স: <input type="number" name="balance" value="{{ user['balance'] }}">
+        <button type="submit">💾 সেভ</button>
+    </form>
+    <br>
+    <a href="/">⬅️ ফিরে যান</a>
+</body>
+</html>

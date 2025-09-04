@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>অ্যাডমিন প্যানেল</title>
+</head>
+<body>
+    <h2>👨‍💼 ইউজার লিস্ট</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>User ID</th>
+            <th>নাম</th>
+            <th>ব্যালেন্স</th>
+            <th>অ্যাকশন</th>
+        </tr>
+        {% for user_id, info in users.items() %}
+        <tr>
+            <td>{{ user_id }}</td>
+            <td>{{ info["name"] }}</td>
+            <td>{{ info["balance"] }}</td>
+            <td><a href="/edit/{{ user_id }}">✏️ এডিট</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
