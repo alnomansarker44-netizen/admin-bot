@@ -4,8 +4,8 @@ import requests
 app = Flask(__name__)
 
 # 🔑 তোমার Bot এর Railway URL & Token
-BOT_API = "https://your-bot-app.up.railway.app"  # <-- এখানে তোমার Bot এর URL বসাও
-BOT_TOKEN = "8208693924:AAG7RSPdfgdfnqVMPmQyxAbXDLpEPgcARFsqaZtU"            # <-- Bot এ সেট করা secret token
+BOT_API = "https://smsbot-7n9l.onrender.com"  # <-- এখানে তোমার Bot এর URL বসাও
+BOT_TOKEN = "8311055911:AAGAGOPWLuTHNYCAxy6aGF3yOw6bwNHaRMo"            # <-- Bot এ সেট করা secret token
 
 # --- সব ইউজার ফেচ করা ---
 def fetch_users():
@@ -50,5 +50,6 @@ def edit(user_id):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001, debug=True)
+
 
 
